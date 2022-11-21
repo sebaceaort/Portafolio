@@ -4,7 +4,7 @@
  */
 
 const esPrimo=(num)=>{
-    if(num%2===0 || num===1) return false;
+    if(num%2===0 || num<=1) return false;
     for(let i=3; i<=num; i+=2){
         if(num!==i && num%i===0) return false;
     }
